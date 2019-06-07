@@ -45,53 +45,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinTreeNode.cs" />
-    <Compile Include="Control_Color.cs">
+    <Compile Include="Function adding window\BinTreeNode.cs" />
+    <Compile Include="User Controls\Control_Color.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Color.Designer.cs">
+    <Compile Include="User Controls\Control_Color.Designer.cs">
       <DependentUpon>Control_Color.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Float.cs">
+    <Compile Include="User Controls\Control_Float.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Float.Designer.cs">
+    <Compile Include="User Controls\Control_Float.Designer.cs">
       <DependentUpon>Control_Float.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Light.cs">
+    <Compile Include="User Controls\Control_Light.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Light.Designer.cs">
+    <Compile Include="User Controls\Control_Light.Designer.cs">
       <DependentUpon>Control_Light.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Material.cs">
+    <Compile Include="User Controls\Control_Material.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Material.Designer.cs">
+    <Compile Include="User Controls\Control_Material.Designer.cs">
       <DependentUpon>Control_Material.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_ShaderColorVertexList.cs">
+    <Compile Include="User Controls\Control_ShaderColorVertexList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_ShaderColorVertexList.Designer.cs">
+    <Compile Include="User Controls\Control_ShaderColorVertexList.Designer.cs">
       <DependentUpon>Control_ShaderColorVertexList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_ShaderList.cs">
+    <Compile Include="User Controls\Control_ShaderList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_ShaderList.Designer.cs">
+    <Compile Include="User Controls\Control_ShaderList.Designer.cs">
       <DependentUpon>Control_ShaderList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Transform.cs">
+    <Compile Include="User Controls\Control_Transform.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Transform.Designer.cs">
+    <Compile Include="User Controls\Control_Transform.Designer.cs">
       <DependentUpon>Control_Transform.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Vector3.cs">
+    <Compile Include="User Controls\Control_Vector3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Vector3.Designer.cs">
+    <Compile Include="User Controls\Control_Vector3.Designer.cs">
       <DependentUpon>Control_Vector3.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -100,10 +100,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FunctionInputWindow.cs">
+    <Compile Include="Function adding window\FunctionInputWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FunctionInputWindow.Designer.cs">
+    <Compile Include="Function adding window\FunctionInputWindow.Designer.cs">
       <DependentUpon>FunctionInputWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Material.cs" />
@@ -114,57 +114,57 @@
       <DependentUpon>NoiseGenerationWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="PropertiesList.cs">
+    <Compile Include="User Controls\PropertiesList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PropertiesList.Designer.cs">
+    <Compile Include="User Controls\PropertiesList.Designer.cs">
       <DependentUpon>PropertiesList.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RE.cs" />
     <Compile Include="Scene.cs" />
-    <Compile Include="TransformControl.cs">
+    <Compile Include="User Controls\TransformControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TransformControl.Designer.cs">
+    <Compile Include="User Controls\TransformControl.Designer.cs">
       <DependentUpon>TransformControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Vector3.cs" />
     <Compile Include="Vertex.cs" />
-    <EmbeddedResource Include="Control_Color.resx">
+    <EmbeddedResource Include="User Controls\Control_Color.resx">
       <DependentUpon>Control_Color.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Float.resx">
+    <EmbeddedResource Include="User Controls\Control_Float.resx">
       <DependentUpon>Control_Float.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Light.resx">
+    <EmbeddedResource Include="User Controls\Control_Light.resx">
       <DependentUpon>Control_Light.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Material.resx">
+    <EmbeddedResource Include="User Controls\Control_Material.resx">
       <DependentUpon>Control_Material.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_ShaderColorVertexList.resx">
+    <EmbeddedResource Include="User Controls\Control_ShaderColorVertexList.resx">
       <DependentUpon>Control_ShaderColorVertexList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_ShaderList.resx">
+    <EmbeddedResource Include="User Controls\Control_ShaderList.resx">
       <DependentUpon>Control_ShaderList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Transform.resx">
+    <EmbeddedResource Include="User Controls\Control_Transform.resx">
       <DependentUpon>Control_Transform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Vector3.resx">
+    <EmbeddedResource Include="User Controls\Control_Vector3.resx">
       <DependentUpon>Control_Vector3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FunctionInputWindow.resx">
+    <EmbeddedResource Include="Function adding window\FunctionInputWindow.resx">
       <DependentUpon>FunctionInputWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoiseGenerationWindow.resx">
       <DependentUpon>NoiseGenerationWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PropertiesList.resx">
+    <EmbeddedResource Include="User Controls\PropertiesList.resx">
       <DependentUpon>PropertiesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -176,7 +176,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TransformControl.resx">
+    <EmbeddedResource Include="User Controls\TransformControl.resx">
       <DependentUpon>TransformControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
