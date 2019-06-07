@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9A8CA6D-9453-471A-8192-F8571C3DAD09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>REngine</RootNamespace>
+    <AssemblyName>REngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinTreeNode.cs" />
+    <Compile Include="Control_Color.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Color.Designer.cs">
+      <DependentUpon>Control_Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Float.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Float.Designer.cs">
+      <DependentUpon>Control_Float.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Light.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Light.Designer.cs">
+      <DependentUpon>Control_Light.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Material.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Material.Designer.cs">
+      <DependentUpon>Control_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_ShaderColorVertexList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_ShaderColorVertexList.Designer.cs">
+      <DependentUpon>Control_ShaderColorVertexList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_ShaderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_ShaderList.Designer.cs">
+      <DependentUpon>Control_ShaderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Transform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Transform.Designer.cs">
+      <DependentUpon>Control_Transform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Vector3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_Vector3.Designer.cs">
+      <DependentUpon>Control_Vector3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionInputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionInputWindow.Designer.cs">
+      <DependentUpon>FunctionInputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs" />
+    <Compile Include="NoiseGenerationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoiseGenerationWindow.Designer.cs">
+      <DependentUpon>NoiseGenerationWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PropertiesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesList.Designer.cs">
+      <DependentUpon>PropertiesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RE.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="TransformControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransformControl.Designer.cs">
+      <DependentUpon>TransformControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vertex.cs" />
+    <EmbeddedResource Include="Control_Color.resx">
+      <DependentUpon>Control_Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Float.resx">
+      <DependentUpon>Control_Float.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Light.resx">
+      <DependentUpon>Control_Light.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Material.resx">
+      <DependentUpon>Control_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_ShaderColorVertexList.resx">
+      <DependentUpon>Control_ShaderColorVertexList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_ShaderList.resx">
+      <DependentUpon>Control_ShaderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Transform.resx">
+      <DependentUpon>Control_Transform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Vector3.resx">
+      <DependentUpon>Control_Vector3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionInputWindow.resx">
+      <DependentUpon>FunctionInputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoiseGenerationWindow.resx">
+      <DependentUpon>NoiseGenerationWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesList.resx">
+      <DependentUpon>PropertiesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TransformControl.resx">
+      <DependentUpon>TransformControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
